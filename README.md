@@ -1,5 +1,4 @@
 # Lab2DM
-2nd lab DM
 # Hotel Database Management Application
 
 ## 1. Введение
