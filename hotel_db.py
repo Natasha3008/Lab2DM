@@ -51,7 +51,7 @@ class HotelDatabase:
         self.conn.commit()
         return cursor.rowcount > 0
 
-    def search_records(self, room_id):    #поиск комнаты по room_id сложность O(1)
+    def search_records(self, room_id):    #поиск комнаты по room_id сложность O(logn)
         cursor = self.conn.cursor()
         cursor.execute('SELECT * FROM rooms WHERE Room_ID = ?', (room_id,))
         return cursor.fetchone()
